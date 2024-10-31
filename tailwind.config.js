@@ -23,6 +23,14 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],  // Improved syntax
       },
+      spacing: {
+        '1': '8px',
+        '2': '10px',
+        '3': '15px',
+        '4': '30px',
+        '5': '60px',
+        '6': '92px',
+      }
     },
   },
   plugins: [],
