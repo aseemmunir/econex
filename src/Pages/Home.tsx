@@ -5,7 +5,7 @@ import Header from '../Components/Header/Header'
 const Home = () => {
   return (
     <div>
-      <Navbar/>
+      Home
     </div>
   )
 }
