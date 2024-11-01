@@ -19,7 +19,7 @@ const Header = () => {
             <NavLink to='/'><button className='px-3 py-2 mt-1 text-white rounded-full bg-grey'>VIEW COLLECTIONS</button></NavLink>
           </div>
         </article>
-        <NavLink to='/' className='col-span-3 health-section'>
+        <NavLink  className='col-span-3 health-section' to='/'>
           <article className='p-4 content'>
             <h2 className='text-lg'>Enhance Beauty, Elevate Health</h2> 
             <figure className='product'>
@@ -29,7 +29,7 @@ const Header = () => {
         </NavLink>
         <NavLink to='/' className='col-span-3 tech-section'>
           <article className='p-4 content'>
-            <h2 className='text-lg max-w-[297px]'>Upgrade Life with Advanced Tech</h2> 
+            <h2 className='text-lg'>Upgrade Life with Advanced Tech</h2> 
             <figure className='product w-[270px]'>
               <img src={watchpng} alt="" />
             </figure>
@@ -58,7 +58,7 @@ const Header = () => {
           <article className=" fesion-section">
             <article className='p-4 content'>
               <h2 className='max-w-[297px] text-lg pb-3'>Where Fashion Meets Personality</h2>
-              <figure className='product w-[176px] right-4'>
+              <figure className='product-img w-[176px] right-4'>
                 <img src={fesionpng} alt="" />
               </figure>
           </article>
