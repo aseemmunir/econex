@@ -21,7 +21,7 @@ module.exports = {
         xs: '14px',
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],  // Improved syntax
+        poppins: ['Poppins', 'sans-serif'], 
       },
       spacing: {
         '1': '8px',
