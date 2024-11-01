@@ -14,7 +14,7 @@
     right: 10px;
 }
 .health-section{
-    background-image: url('../../Assets/HealthBg.png');
+    background-image: url('../../Assets/healthBg.svg');
     position: relative;
     background-repeat: no-repeat;
     width: 100%;
@@ -34,8 +34,8 @@
 }
 .product{
     position: absolute;
-    right:34px;
-    bottom: -10px;
+    right: 24px;
+    bottom: -20px;
 }
 .health-section{
     background-image: url('../../Assets/healthBg.svg');

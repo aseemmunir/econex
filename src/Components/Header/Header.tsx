@@ -29,16 +29,16 @@ const Header = () => {
         </NavLink>
         <NavLink to='/' className='col-span-3 tech-section'>
           <article className='p-4 content'>
-            <h2 className='text-lg max-w-[286px]'>Enhance Beauty, Elevate Health</h2> 
+            <h2 className='text-lg max-w-[297px]'>Upgrade Life with Advanced Tech</h2> 
             <figure className='product w-[270px]'>
-              <img src={healthpng} alt="" />
+              <img src={watchpng} alt="" />
             </figure>
           </article>
         </NavLink>
 
           
         <NavLink to='/'className="items-stretch col-span-3 groceries-section">
-            <article className='max-w-[305px] p-4 content'>
+            <article className='p-4 content'>
               <h2 className='text-lg '>Quality Groceries for Every Meal</h2>
               <figure className='product right-4'>
                 <img className='w-[223px]' src={mealpng} alt="" />
