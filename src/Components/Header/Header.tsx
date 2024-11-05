@@ -10,7 +10,7 @@ import fesionpng from "../../Assets/fesion.svg"
 
 const Header = () => {
   return (
-    <article className='container mx-auto font-poppins'>
+    <article className='container mx-auto px-4 font-poppins'>
       <article className='grid grid-cols-12 gap-4'>
         <article className="col-span-6 header-section">
           <div className='p-4 content'>
@@ -23,7 +23,7 @@ const Header = () => {
           <article className='p-4 content'>
             <h2 className='text-lg'>Enhance Beauty, Elevate Health</h2> 
             <figure className='product'>
-              <img src={healthpng} alt="" />
+              <img className='health-product' src={healthpng} alt="" />
             </figure>
           </article>
         </NavLink>
@@ -31,7 +31,7 @@ const Header = () => {
           <article className='p-4 content'>
             <h2 className='text-lg'>Upgrade Life with Advanced Tech</h2> 
             <figure className='product w-[270px]'>
-              <img src={watchpng} alt="" />
+              <img className='watch-product' src={watchpng} alt="" />
             </figure>
           </article>
         </NavLink>
@@ -41,7 +41,7 @@ const Header = () => {
             <article className='p-4 content'>
               <h2 className='text-lg '>Quality Groceries for Every Meal</h2>
               <figure className='product right-4'>
-                <img className='w-[223px]' src={mealpng} alt="" />
+                <img className='meal-product w-[223px]' src={mealpng} alt="" />
               </figure>
             </article>
         </NavLink>
@@ -59,7 +59,7 @@ const Header = () => {
             <article className='p-4 content'>
               <h2 className='max-w-[297px] text-lg pb-3'>Where Fashion Meets Personality</h2>
               <figure className='product-img w-[176px] right-4'>
-                <img src={fesionpng} alt="" />
+                <img className='feshion-product' src={fesionpng} alt="" />
               </figure>
           </article>
         </article>
