@@ -20,10 +20,10 @@ const Selectors: React.FC<DropdownProps> = ({ options }) => {
     <div className="relative inline-block ">
       <button
         onClick={handleToggle}
-        className="px-4 py-2  flex items-center gap-1 "
+        className="  text-xs flex items-center  text-secondary"
       >
         EN/PKR <span>
-            <img className={`ml-2 w-4 h-4 transform transition-transform duration-200 ${
+            <img className={` w-[16px] h-[16px] transform transition-transform duration-200 ${
             isOpen ? "rotate-180" : "rotate-0"
           }`} src={Arrow} alt="" />
         </span>
