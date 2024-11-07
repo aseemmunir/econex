@@ -1,0 +1,24 @@
+.header-section{
+    background-image: url('../../Assets/Main.png');
+}
+.health-section{
+    background-image: url('../../Assets/healthBg.svg');
+}
+.tech-section{
+    background-image: url('../../Assets/techBg.svg');
+    position: relative;
+};
+.health-section{
+    background-image: url('../../Assets/healthBg.svg');
+}
+.groceries-section{
+    background-image: url('../../Assets/groceriesBg.svg');
+}
+.sport-section{
+    background-image: url('../../Assets/SportBg.png');
+}
+.fesion-section{
+    background-image: url('../../Assets/feshionBg.svg');
+    background-repeat: no-repeat;
+}
+ 
