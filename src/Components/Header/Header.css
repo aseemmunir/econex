@@ -1,176 +1,24 @@
 .header-section{
     background-image: url('../../Assets/Main.png');
-    position: relative;
-    width: 100%;
-    height: 381px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    border-radius: 15px;
-
-}
-.product{
-    position: absolute;
-    right: 10px;
 }
 .health-section{
     background-image: url('../../Assets/healthBg.svg');
-    position: relative;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 381px;
-    border-radius: 15px;
-    background-size: cover;
-
 }
 .tech-section{
     background-image: url('../../Assets/techBg.svg');
     position: relative;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 381px;
-    border-radius: 15px;
-
-}
-.product{
-    position: absolute;
-    right: -5px;
-    bottom: -21px;
-}
-.product-img{
-    position: absolute;
-    right: -5px;
-    bottom: -10px;
-}
+};
 .health-section{
     background-image: url('../../Assets/healthBg.svg');
-    position: relative;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 381px;
-    border-radius: 15px;
-
 }
 .groceries-section{
     background-image: url('../../Assets/groceriesBg.svg');
-    position: relative;
-    width: 100%;
-    height: 330px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
 }
 .sport-section{
     background-image: url('../../Assets/SportBg.png');
-    position: relative;
-    width: 100%;
-    height: 330px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    border-radius: 15px;
 }
 .fesion-section{
     background-image: url('../../Assets/feshionBg.svg');
-    position: relative;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 330px;
-    border-radius: 15px;
 }
-.sport-content{
-  padding-top: 32px;
-}
-
-@media only screen and (max-width: 1550px) {
-    .health-section, .tech-section, .groceries-section, .fesion-section {
-      flex-basis: 100%; 
-    }
-    .content {
-      padding: 16px;
-    }
-    h2 {
-      font-size: 16px; 
-    }
-    figure.product {
-      width: 80%;
-      margin-bottom: 5px;
-
-    }
-    img {
-      width: 90%;
-      height: auto; 
-    }
-    .sport-section {
-      flex-basis: 80%; 
-    }
-    .sport-section .content {
-     padding: 16px; 
-     
-    }
-    .sport-section button {
-      font-size: 14px;
-    }
-    .product-img{
-        width: 60%;
-    }
-    .health-product{
-      width: 90%;
-      margin-bottom: 10px;
-      margin-left: 17px;
-
-    }
-    .watch-product{
-      width: 90%;
-      margin-left: 17px;
-    }
-    .meal-product{
-      width: 100%;
-      margin-bottom: 7px;
-    }
-    .feshion-product{
-      width: 90%;
-      margin-left: 18px;
-      margin-bottom: 0px;
-    }
-    .recket-img{
-      position: absolute;
-      width: 230px;
-      right: 3px;
-      top: 110px;
-    }
-    .sport-content{
-      padding-top: 16px;
-    }
-  }
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .health-section, .tech-section, .groceries-section, .fesion-section {
-      flex-basis: 50%;
-    }
-    .content{
-      padding: 24px;
-    }
-    h2 {
-      font-size: 20px; 
-    }
-    figure.product {
-      width: 50%; 
-      margin: 0 auto;
-    }
-    img {
-      width: 50%; 
-      height: auto; 
-    }
-    .sport-section {
-      flex-basis: 100%; 
-    }
-    .sport-section .content {
-      padding: 14px; 
-    }
-    .sport-section h2 {
-      font-size: 18px; 
-    }
-    .sport-section button {
-      font-size: 14px; 
-    }
-  }
+ 
