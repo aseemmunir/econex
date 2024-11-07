@@ -11,7 +11,7 @@ import Recketsvg from "../../Assets/Recket.svg"
 
 const Header = () =>  {
   return (
-    <article className='container px-4 mx-auto font-poppins'>
+    <article className='container mt-4 mx-auto font-poppins'>
       <article className='grid grid-cols-12 gap-4'>
         <article className="relative col-span-6 header-section w-[100%] h-[381px] bg-no-repeat bg-cover	bg-right rounded-2xl">
           <div className='pt-4 ps-4 content'>

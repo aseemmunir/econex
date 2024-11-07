@@ -1,1 +1,19 @@
-
+/* Navbar.css */
+.navlinks {
+    transition: 1s;
+    position: relative;
+  }
+  
+  .navlink-active::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #F63227;
+    width: calc(100% - 20px);
+    height: 2px;
+    bottom: -2px;
+    left: 10px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+  }
+  
