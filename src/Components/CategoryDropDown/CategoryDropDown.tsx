@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Arrow from '../../Assets/Arrow.svg'
+import './CategoryDropDown.css'
+
 interface DropdownProps {
   options: {
     mainCategory: string;
@@ -30,7 +32,7 @@ const CategoryDropdown: React.FC<DropdownProps> = ({ options }) => {
       </button>
 
       {isOpen && (
-        <div className="absolute mt-6  w-[350px] bg-white border border-gray-200 rounded-md shadow-lg p-3 ">
+        <div className="dropdown absolute mt-4  w-[350px] bg-white border border-gray-200 rounded-md shadow-lg p-3 ">
           <h4 className='text-sm text-primary font-poppins block px-4 py-2 font-semibold'>All Categories</h4>
           {options.map((option, index) => (
             
