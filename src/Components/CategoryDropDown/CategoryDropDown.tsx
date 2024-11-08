@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Arrow from '../../Assets/Arrow.svg'
-import './CategoryDropDown.css'
+import React, { useState, useEffect, useRef } from 'react';
+import Arrow from '../../Assets/Arrow.svg';
+import './CategoryDropDown.css';
 
 interface DropdownProps {
   options: {
@@ -12,30 +12,50 @@ interface DropdownProps {
 const CategoryDropdown: React.FC<DropdownProps> = ({ options }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleToggle = () => setIsOpen(!isOpen);
 
   const handleMouseEnter = (index: number) => setActiveIndex(index);
   const handleMouseLeave = () => setActiveIndex(null);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="relative inline-block ">
+    <div className="relative inline-block" ref={dropdownRef}>
       <button
         onClick={handleToggle}
-        className="px-4 py-2 border rounded-full flex items-center gap-1 "
+        className="px-4 py-2 border rounded-full flex items-center gap-1"
       >
-        Categories <span>
-            <img className={`ml-2 w-4 h-4 transform transition-transform duration-200 ${
-            isOpen ? "rotate-180" : "rotate-0"
-          }`} src={Arrow} alt="" />
+        Categories
+        <span>
+          <img
+            className={`ml-2 w-4 h-4 transform transition-transform duration-200 ${
+              isOpen ? 'rotate-180' : 'rotate-0'
+            }`}
+            src={Arrow}
+            alt=""
+          />
         </span>
       </button>
 
       {isOpen && (
-        <div className="dropdown absolute mt-4  w-[350px] bg-white border border-gray-200 rounded-md shadow-lg p-3 ">
-          <h4 className='text-sm text-primary font-poppins block px-4 py-2 font-semibold'>All Categories</h4>
+        <div className="dropdown absolute mt-4 w-[350px] bg-white border border-gray-200 rounded-md shadow-lg p-3">
+          <h4 className="text-sm text-primary font-poppins block px-4 py-2 font-semibold">
+            All Categories
+          </h4>
           {options.map((option, index) => (
-            
             <div
               key={index}
               onMouseEnter={() => handleMouseEnter(index)}

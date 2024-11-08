@@ -21,7 +21,7 @@ const ProductCard: React.FC<CardProps> = ({ cardIcon, cardReviews, cardTitle, ca
 
                 <div className="">
                     <h2 className="text-sm overflow-hidden text-ellipsis whitespace-nowrap pt-[15px]">{cardTitle}</h2>
-                    <p className="text-gray-500 text-sm text-[#FCC93D]">★★★★★
+                    <p className=" text-sm text-[#FCC93D]">★★★★★
                         <span className="text-secondary text-xs">
                             {cardReviews}
                         </span>
@@ -42,7 +42,7 @@ const ProductCard: React.FC<CardProps> = ({ cardIcon, cardReviews, cardTitle, ca
                 </div>
             </div>
 
-            <div className="absolute top-[130px] start-[290px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute top-[80px] start-[240px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <nav className="flex flex-col">
                     <NavLink className="w-16 h-16" to="/">
                         <img src={Cart} alt="Wishlist" /> 
