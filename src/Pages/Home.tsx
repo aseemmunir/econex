@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../Components/Header/Header'
+import Stats from '../Components/Stats/Stats'
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header/>
-    </div>
+      <Stats/>
+    </>
   )
 }
 
