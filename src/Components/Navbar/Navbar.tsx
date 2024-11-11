@@ -60,18 +60,11 @@ const Navbar = () => {
               <div className="flex flex-wrap items-center gap-[19px]">
                 <CategoryDropdown options={options} />
                 <nav className='flex gap-[40px]'>
-                  <NavLink
-                    to="/"
-                    className={({ isActive }) => 
-                      `navlinks text-sm transition-all font-normal ${isActive ? 'navlink-active text-grey font-medium' : 'text-secondary'} hover:text-grey`
-                    }
+                  <NavLink to="/" className={({ isActive }) =>   `navlinks text-sm transition-all font-normal ${isActive ? 'navlink-active text-grey font-medium' : 'text-secondary'} hover:text-grey`}
                   >
                     Home
                   </NavLink>
-                  <NavLink
-                    to="/products"
-                    className={({ isActive }) => 
-                      `navlinks text-sm transition-all font-normal ${isActive ? 'navlink-active text-grey font-medium' : 'text-secondary'} hover:text-grey`
+                  <NavLink to="/products" className={({ isActive }) =>   `navlinks text-sm transition-all font-normal ${isActive ? 'navlink-active text-grey font-medium' : 'text-secondary'} hover:text-grey`
                     }
                   >
                     Products

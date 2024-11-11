@@ -2,7 +2,7 @@ import React from 'react'
 import './Stats.css'
 import StatCounter from '../StatCounter/StatCounter'
 import HappyCustomer from '../HappyCustomer/HappyCustomer'
-import Product from '../Product/Product'
+import ProductListedNumber from '../ProductListedNumber/ProductListedNumber'
 import Review from '../Review/Review'
 
 const Stats = () => {
@@ -20,7 +20,7 @@ const Stats = () => {
                 <div className="gradient-line"></div>
             </div>
             <div className='flex gap-6'>
-                <Product/>
+                <ProductListedNumber/>
                 <div className="gradient-line"></div>
 
             </div>
